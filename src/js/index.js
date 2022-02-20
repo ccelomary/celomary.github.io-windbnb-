@@ -30,7 +30,7 @@ const maxWidth700 = window.matchMedia('(max-width:700px)');
 let isOpen = false;
 
 async function getAllData() {
-    const res  = await fetch('../../data/stays.json');
+    const res  = await fetch('https://celomary.github.io/celomary.github.io-windbnb-/data/stays.json');
     const data = await res.json();
     return (data);
 }
